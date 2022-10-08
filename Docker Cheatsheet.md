@@ -48,6 +48,6 @@ docker [options] [image name or hash] [optional command to run inside container]
   - Make port 80 inside the container available as port 8888 on the host
 
   ```bash
-  docker run --rm -p 8888:80 -v (pwd)/html:/usr/share/nginx/html -d nginx
+  docker run --rm -p 8888:80 -v $(pwd)/html:/usr/share/nginx/html -d nginx
   ```
 
